@@ -10,29 +10,65 @@
 
    
    <hotel-result-list
-          options = [[listOption]]
-          page-size = "10"
+          options = [[option]]
+          default-view = "List"
           data = [[hotelList]]
-          enable-review = false
+          
           primary-amenities=[[primaryAmenities]]
+
+          on-sort-change = "_partenComponentHandling"
+          on-view-change = "_onViewChange"
+           
+          filter-state = {{filterState}}
            >   
    </hotel-result-list>
 
 ```
 
 
-##### Data
+##### Data Attribute
 
 ```javascript
 
-    primaryAmenities = [
-            "Bar",
-            "Restaurant",
-            "Wifi",
-            "Parking"
-    ];
+    // options
+    options = {
+        filterMessage : "We found {{count}} hotels for your search",
 
-    list =[
+        pageSize : 10,
+
+        sortAllowed : [ 
+            { name:"Price", default: "true"},
+            { name:"HotelName"},
+            { name:"Star Rating"}
+        ],
+
+        enableListView : true,
+        enableMapView : true,
+
+        showReview : false,
+
+        showRoomText : "See Available Rooms",
+
+        primaryAmenities : [
+            { name : "Bar", icon: "bar"},
+            { name : "Restaurant", icon: "restaurant"},
+            { name : "Wifi", icon : "wifi"},
+            { name : "Parking", icon : "parking" }
+        ]
+
+    };
+
+    // filter State
+    filterState = [
+        {
+            name : "Price"
+        },
+        {
+            name : "Rating"
+        }
+    ]
+
+    hotelList =[
 
         {
             "id": "55610",
@@ -169,6 +205,227 @@
             userReviewCount : 500
             reviewType : "Excellent"
             
+        },
+
+
+        {
+            "rating": 5,
+            "address": "221 N. RAMPART BLVD  LAS VEGAS",
+            "phoneNumber": "702-869-7777",
+            "distance": 7.74,
+            "description": "This is a superb casino resort with no booking restrictions. It features a swimming lagoon with private cabanas and a full-service spa. It has a glamorous casino, as well as 7 restaurants and bars. The hotel consists of 531 beautifully-appointed guest rooms with very upscale amenities. Further facilities include air conditioning, Internet access, room and laundry services, as well as a car park and garage for those arriving by car.",
+            "descriptions": [
+                {
+                    "key": "",
+                    "value": "This is a superb casino resort with no booking restrictions. It features a swimming lagoon with private cabanas and a full-service spa. It has a glamorous casino, as well as 7 restaurants and bars. The hotel consists of 531 beautifully-appointed guest rooms with very upscale amenities. Further facilities include air conditioning, Internet access, room and laundry services, as well as a car park and garage for those arriving by car."
+                }
+            ],
+            "heroImageUrl": "http://d3mj096p5q0e20.cloudfront.net/ti/HBD/55880/041786_hb_a_001.jpg",
+            "geoCode": "36.1759,-115.2872",
+            "amenities": [
+                {
+                    "type": "Room",
+                    "description": "Air-conditioned in common areas"
+                },
+                {
+                    "type": "Room",
+                    "description": "Balcony"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Bar-s"
+                },
+                {
+                    "type": "Room",
+                    "description": "Bathroom"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Vehicle Parking"
+                },
+                {
+                    "type": "Room",
+                    "description": "Central air-conditioned"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Central heating"
+                },
+                {
+                    "type": "Room",
+                    "description": "Direct dial telephone"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Fresh water pool"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Garage"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Fitness Facility"
+                },
+                {
+                    "type": "Room",
+                    "description": "Hairdryer"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Heated pool"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Indoor pool"
+                },
+                {
+                    "type": "Room",
+                    "description": "Internet"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Laundry service"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Number of floors (main building)"
+                },
+                {
+                    "type": "Room",
+                    "description": "Internet"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Restaurant"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Restaurant"
+                },
+                {
+                    "type": "Room",
+                    "description": "Room service"
+                },
+                {
+                    "type": "Room",
+                    "description": "Safe"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Sauna"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Suites"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Total number of rooms"
+                },
+                {
+                    "type": "Hotel",
+                    "description": "Year of construction"
+                }
+            ],
+            "photoUrls": [
+                "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55880/041786_hb_w_002.jpg"
+            ],
+            "pointsOfInterest": [],
+            "minFare": {
+                "areRatesAvailable": true,
+                "fare": {
+                    "amount": 235.28,
+                    "currency": "USD",
+                    "displayAmount": "USD 235.28"
+                },
+                "equivalentFares": null,
+                "equivalents": null
+            },
+            "rooms": null,
+            "brand": {
+                "code": "MARIO",
+                "name": "MARRIOTT HOTELS AND RESORTS",
+                "logo": null
+            },
+            "type": "Hotel",
+            "moreRoomsAvailable": true,
+            "brandAvailablility": true,
+            "deal": null,
+            "isCancellable": true,
+            "allPassengersInfoRequired": false,
+            "isGuaranteeRequired": true,
+            "id": "55880",
+            "name": "JW Marriott Resort &amp; Casino",
+            "fare": {
+                "type": "Negotiated",
+                "code": null,
+                "isRefundable": false,
+                "components": [
+                    {
+                        "money": {
+                            "amount": 787.28,
+                            "currency": "USD",
+                            "displayAmount": "USD 787.28"
+                        },
+                        "components": null,
+                        "type": "BaseFare",
+                        "properties": []
+                    },
+                    {
+                        "money": {
+                            "amount": 867.34,
+                            "currency": "USD",
+                            "displayAmount": "USD 867.34"
+                        },
+                        "components": null,
+                        "type": "TotalFare",
+                        "properties": []
+                    },
+                    {
+                        "money": {
+                            "amount": 0,
+                            "currency": "USD",
+                            "displayAmount": "USD 0.00"
+                        },
+                        "components": null,
+                        "type": "TotalFee",
+                        "properties": []
+                    },
+                    {
+                        "money": {
+                            "amount": 80.06,
+                            "currency": "USD",
+                            "displayAmount": "USD 80.06"
+                        },
+                        "components": null,
+                        "type": "TotalTax",
+                        "properties": []
+                    },
+                    {
+                        "money": {
+                            "amount": 0,
+                            "currency": "USD",
+                            "displayAmount": "USD 0.00"
+                        },
+                        "components": null,
+                        "type": "TotalDiscount",
+                        "properties": []
+                    }
+                ],
+                "equivalents": null
+            },
+           
+            "isPostPaid": false,
+            "isSoldOut": false,
+            "isPreferred": false,
+            "preferredSortOrder": 0,
+            "source": {
+                "inventoryId": "55880",
+                "id": 111,
+                "name": "HotelBeds Test"
+            },
+            "restrictions": null
         }
 
     ]
