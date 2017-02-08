@@ -434,30 +434,12 @@
 
 ## Important Information
 
-- Auto-suggest - When user start typing auto-suggest should suggest results only after entering minimum 3 char.
-- Auto-suggest - Once user stop entering the data, auto-suggest should fire after a gap of 50 ms (Milli seconds).
-- Auto-suggest - Text box (Destination) will show loader while processing and after selection of item, it shoul started showing cross icon to clear the data.
-- Auto-suggest - Should allow user to select an items says "Las Vegas, NV, United States - McCarran International Airport (LAS)" but after selection in text box it will appear as "LAS - Las Vegas" (Short version)
-- Auto-suggest - Spec should categorised with CITY / AIRPORT and POINTS OF INTEREST. 
-- Auto-suggest - On selection of search button pass on the location object of user selection.
-- Component Events - doSearch (Triggers	event with search data) and initializeSearch (Listens to this event to set defautl state as per data passed)
-- Misc items to be handled from CSS like:
-1. Background color of outer container.
-2. Mixin (to control outer width)
-3. Button color etc.
+-
 
 
 ## Test Cases
 
-- Basic validation - Don't enter or select anything and click Search
-- Validations - If Pax count is having child than age selection should be mandatory
-- Date - Checkin/Checkout - Calender should be available
-- Date - User shouldn't allow to type in Checkin/checkout dates
-- Destination - If user don't select from autosuggest and click search with proper dates
-- Auto-suggest - When user starts typing auto-suggest should start giving results after min. 3 char
-- Auto-suggest - Should fire when user stop typing - Gap should be min 50ms
-- Auto-suggest - Destination text box to show loader while processing and cross icon after selection to clear
-- Button name should change on click of Search to "Searching" or whatever the name set in property
+- 
 
 ## Steps to Start
 - Set Github repository at your end for this project, we will merge them later
