@@ -440,8 +440,6 @@
 - On hover on particular itinerary under line the hotel name and fill color in "See available rooms" button.
 - In case of rooms count less that 3, start showing "We have xyz left at USD 123" in red.
 - Default sorting will set on Price (ascending order)
-- 
-
 
 ## Test Cases
 -
