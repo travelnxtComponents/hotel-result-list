@@ -48,7 +48,7 @@
         showReview : false,
 
         showRoomText : "See Available Rooms",
-
+        
         primaryAmenities : [
             { name : "Bar", icon: "bar"},
             { name : "Restaurant", icon: "restaurant"},
@@ -433,7 +433,14 @@
 ```
 
 ## Important Information
--
+- In case no thumpnail image available for hotel, show default image available here - 
+- Hotel lengthy name max will come in 2 lines, after that start display like "Hotel casino..."
+- Hotel address lengthy name will remain in 1 line only and after that .....
+- Hotel aminities max can be 7 only. (and need to display icons those are available in hotel property)
+- On hover on particular itinerary under line the hotel name and fill color in "See available rooms" button.
+- In case of rooms count less that 3, start showing "We have xyz left at USD 123" in red.
+- Default sorting will set on Price (ascending order)
+- 
 
 
 ## Test Cases
