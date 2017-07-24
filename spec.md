@@ -177,10 +177,10 @@
             "address": "221 N. RAMPART BLVD  LAS VEGAS",
             "phoneNumber": "702-869-7777",
             "distance": 7.74,
-            "description": "This is a superb casino resort with no booking restrictions. It features a swimming lagoon with private cabanas and a full-service spa. It has a glamorous casino, as well as 7 restaurants and bars. The hotel consists of 531 beautifully-appointed guest rooms with very upscale amenities. Further facilities include air conditioning, Internet access, room and laundry services, as well as a car park and garage for those arriving by car.",
+            
             "descriptions": [
                 {
-                    "key": "",
+                    "type": "",
                     "value": "This is a superb casino resort with no booking restrictions. It features a swimming lagoon with private cabanas and a full-service spa. It has a glamorous casino, as well as 7 restaurants and bars. The hotel consists of 531 beautifully-appointed guest rooms with very upscale amenities. Further facilities include air conditioning, Internet access, room and laundry services, as well as a car park and garage for those arriving by car."
                 }
             ],
@@ -296,16 +296,7 @@
                 "http://d3mj096p5q0e20.cloudfront.net/fi/HBD/55880/041786_hb_w_002.jpg"
             ],
             "pointsOfInterest": [],
-            "minFare": {
-                "areRatesAvailable": true,
-                "fare": {
-                    "amount": 235.28,
-                    "currency": "USD",
-                    "displayAmount": "USD 235.28"
-                },
-                "equivalentFares": null,
-                "equivalents": null
-            },
+            
             "rooms": null,
             "brand": {
                 "code": "MARIO",
@@ -322,63 +313,26 @@
             "id": "55880",
             "name": "JW Marriott Resort &amp; Casino",
             "fare": {
-                "type": "Negotiated",
+                "baseFare":{
+                    "amount": 20,
+                    "currency": "USD",
+                    "displayAmount": "USD 20.00"
+                },
+                "totalDiscount":{
+                    "amount": 5,
+                    "currency": "USD",
+                    "displayAmount": "USD 5.00"
+                }
+                "totalFare":{
+                    "amount": 20,
+                    "currency": "USD",
+                    "displayAmount": "USD 20.00"
+                }
+                "type": "Published",
                 "code": null,
                 "isRefundable": false,
-                "components": [
-                    {
-                        "money": {
-                            "amount": 787.28,
-                            "currency": "USD",
-                            "displayAmount": "USD 787.28"
-                        },
-                        "components": null,
-                        "type": "BaseFare",
-                        "properties": []
-                    },
-                    {
-                        "money": {
-                            "amount": 867.34,
-                            "currency": "USD",
-                            "displayAmount": "USD 867.34"
-                        },
-                        "components": null,
-                        "type": "TotalFare",
-                        "properties": []
-                    },
-                    {
-                        "money": {
-                            "amount": 0,
-                            "currency": "USD",
-                            "displayAmount": "USD 0.00"
-                        },
-                        "components": null,
-                        "type": "TotalFee",
-                        "properties": []
-                    },
-                    {
-                        "money": {
-                            "amount": 80.06,
-                            "currency": "USD",
-                            "displayAmount": "USD 80.06"
-                        },
-                        "components": null,
-                        "type": "TotalTax",
-                        "properties": []
-                    },
-                    {
-                        "money": {
-                            "amount": 0,
-                            "currency": "USD",
-                            "displayAmount": "USD 0.00"
-                        },
-                        "components": null,
-                        "type": "TotalDiscount",
-                        "properties": []
-                    }
-                ],
-                "equivalents": null
             },
+           
            
             "isPostPaid": false,
             "isSoldOut": false,
