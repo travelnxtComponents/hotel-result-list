@@ -77,10 +77,10 @@
             "address": "101 MONTELAGO BOULEVARD  HENDERSON",
             "phoneNumber": "702 567 1234",
             "distance": 13.86,
-            "description": "The luxury hotel radiates a Moroccan atmosphere and comprises a total of 493 rooms spread over 9 floors. Amongst the hotel's facilities count an air-conditioned lobby with a 24-hour reception desk, lift access, a hotel safe, a cloakroom and a currency exchange desk. Further amenities include a newspaper stand, a range of shops, a hairdressing salon, a casino, a kids' club, and free car parking spaces. Dining options include a cozy bar and a pleasing restaurant. Guests may also make use of the public Internet access in addition to the laundry and 24-hour room services. Self and valet parking, secure golf bag storage, concierge-assisted boarding passes, and intra-resort on-demand transportation are also offered.",
+            
             "descriptions": [
                 {
-                    "key": "",
+                    "type": "",
                     "value": "The luxury hotel radiates a Moroccan atmosphere and comprises a total of 493 rooms spread over 9 floors. Amongst the hotel's facilities count an air-conditioned lobby with a 24-hour reception desk, lift access, a hotel safe, a cloakroom and a currency exchange desk. Further amenities include a newspaper stand, a range of shops, a hairdressing salon, a casino, a kids' club, and free car parking spaces. Dining options include a cozy bar and a pleasing restaurant. Guests may also make use of the public Internet access in addition to the laundry and 24-hour room services. Self and valet parking, secure golf bag storage, concierge-assisted boarding passes, and intra-resort on-demand transportation are also offered."
                 }
             ],
@@ -89,7 +89,8 @@
             "amenities": [
                 {
                     "type": "Hotel",
-                    "description": "24h check-in"
+                    "description": "24h check-in",
+                    "category": "MasterAmenityName"
                 },
                 {
                     "type": "Hotel",
@@ -136,61 +137,24 @@
             "allPassengersInfoRequired": false,
             "isGuaranteeRequired": true,
             "fare": {
+                "baseFare":{
+                    "amount": 20,
+                    "currency": "USD",
+                    "displayAmount": "USD 20.00"
+                },
+                "totalDiscount":{
+                    "amount": 5,
+                    "currency": "USD",
+                    "displayAmount": "USD 5.00"
+                }
+                "totalFare":{
+                    "amount": 20,
+                    "currency": "USD",
+                    "displayAmount": "USD 20.00"
+                }
                 "type": "Published",
                 "code": null,
                 "isRefundable": false,
-                "components": [
-                    {
-                        "money": {
-                            "amount": 4108.86,
-                            "currency": "USD",
-                            "displayAmount": "USD 4,108.86"
-                        },
-                        "components": null,
-                        "type": "BaseFare",
-                        "properties": []
-                    },
-                    {
-                        "money": {
-                            "amount": 4578.42,
-                            "currency": "USD",
-                            "displayAmount": "USD 4,578.42"
-                        },
-                        "components": null,
-                        "type": "TotalFare",
-                        "properties": []
-                    },
-                    {
-                        "money": {
-                            "amount": 127.72,
-                            "currency": "USD",
-                            "displayAmount": "USD 127.72"
-                        },
-                        "components": null,
-                        "type": "TotalFee",
-                        "properties": []
-                    },
-                    {
-                        "money": {
-                            "amount": 421.84,
-                            "currency": "USD",
-                            "displayAmount": "USD 421.84"
-                        },
-                        "components": null,
-                        "type": "TotalTax",
-                        "properties": []
-                    },
-                    {
-                        "money": {
-                            "amount": 80,
-                            "currency": "USD",
-                            "displayAmount": "USD 80.00"
-                        },
-                        "components": null,
-                        "type": "TotalDiscount",
-                        "properties": []
-                    }
-                ],
             },
             "isPostPaid": false,
             "isSoldOut": false,
