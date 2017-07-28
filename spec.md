@@ -137,21 +137,10 @@
             "allPassengersInfoRequired": false,
             "isGuaranteeRequired": true,
             "fare": {
-                "baseFare":{
-                    "amount": 20,
-                    "currency": "USD",
-                    "displayAmount": "USD 20.00"
-                },
-                "totalDiscount":{
-                    "amount": 5,
-                    "currency": "USD",
-                    "displayAmount": "USD 5.00"
-                }
-                "totalFare":{
-                    "amount": 20,
-                    "currency": "USD",
-                    "displayAmount": "USD 20.00"
-                }
+                "baseFare":20,
+                "totalDiscount":5,
+                "currency" : "USD"
+                "totalFare":20,
                 "type": "Published",
                 "code": null,
                 "isRefundable": false,
@@ -313,26 +302,14 @@
             "id": "55880",
             "name": "JW Marriott Resort &amp; Casino",
             "fare": {
-                "baseFare":{
-                    "amount": 20,
-                    "currency": "USD",
-                    "displayAmount": "USD 20.00"
-                },
-                "totalDiscount":{
-                    "amount": 5,
-                    "currency": "USD",
-                    "displayAmount": "USD 5.00"
-                }
-                "totalFare":{
-                    "amount": 20,
-                    "currency": "USD",
-                    "displayAmount": "USD 20.00"
-                }
+                "baseFare":20,
+                "totalDiscount":5,
+                "currency" : "USD"
+                "totalFare":20,
                 "type": "Published",
                 "code": null,
                 "isRefundable": false,
             },
-           
            
             "isPostPaid": false,
             "isSoldOut": false,
